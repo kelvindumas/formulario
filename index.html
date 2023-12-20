@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Image 1: natal -->
+<img src="images/natal.png" alt="Cartoon character named Frank" style="position: absolute; top: 0; left: 0;">
+
+<!-- Image 2: Snowman -->
+<img src="images/snowman.png" alt="Snowman with friends" style="position: absolute; bottom: 0; right: 0;">
+
+<div class="form-container">
+  <form id="contactForm">
+    <h2>Sign up</h2>
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required>
+    </div>
+    <div class="form-group">
+      <label for="secondName">Second Name:</label>
+      <input type="text" id="secondName" name="secondName" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div class="form-group">
+      <label for="eircode">Eircode:</label>
+      <input type="text" id="eircode" name="eircode" required>
+    </div>
+    <button type="submit" class="submit-btn">Send</button>
+  </form>
+</div>
+
+<script src="form-validation.js"></script>
+
+</body>
+</html>

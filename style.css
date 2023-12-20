@@ -1,0 +1,105 @@
+/* Basic reset for some elements */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Full height layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Flexbox centering for the body to align the form-container */
+body {
+  display: flex;
+  align-items: center; /* Centers the form-container vertically */
+  justify-content: center; /* Centers the form-container horizontally */
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #254EA1 40%, #5626BE 50%, #C49CD9 100%);
+  color: #282828; /* Dark gray for text */
+  min-height: 100vh; /* Full viewport height */
+  padding: 20px; /* Padding around the form-container */
+}
+
+/* Style of the form container */
+.form-container {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2); /* Shadow effect */
+  background-color: #ffffff; /* Solid white background for the form */
+  padding: 20px; /* Reduced padding for the smaller container */
+  border-radius: 8px; /* Rounded corners */
+  width: 90%; /* Container width as a percentage of screen width */
+  max-width: 500px; /* Reduced max-width of the form for a smaller container */
+  margin: auto; /* Ensures margin on auto for auto-adjustment */
+}
+
+/* Form style adjustments */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Adjusted gap for spacing between form items */
+}
+
+/* Title style */
+h2 {
+  color: #5626BE; /* Title color */
+  text-align: center;
+  margin-bottom: 1.5rem; /* Responsive bottom margin */
+  font-size: 1.75rem; /* Slightly reduced title size for smaller container */
+}
+
+/* Form input and label adjustments */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Slightly reduced gap for spacing between label and input */
+}
+
+.form-group label {
+  color: #254EA1;
+  font-size: 0.9rem; /* Slightly reduced font size for labels */
+  margin-bottom: 0.4rem; /* Reduced space between label and input */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  padding: 12px; /* Slightly reduced padding for input fields */
+  border: 2px solid #5626BE; /* Border color for input fields */
+  border-radius: 4px;
+  font-size: 0.9rem; /* Reduced font size for input text */
+}
+
+/* Adjusting the submit button style */
+.submit-btn {
+  background-color: #254EA1;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 4px;
+  font-size: 0.9rem; /* Reduced font size for button text */
+  font-weight: bold;
+  border: none; /* Remove border for the button */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover, .submit-btn:focus {
+  background-color: #5626BE; /* A lighter shade of blue for hover/focus */
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .form-container {
+    width: calc(100% - 40px); /* Adjusted width for smaller screens */
+    padding: 15px; /* Reduced padding for smaller screens */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Smaller title size for better UX on mobile */
+  }
+
+  .submit-btn {
+    padding: 8px 16px; /* Adjusted padding for smaller screens */
+  }
+}
