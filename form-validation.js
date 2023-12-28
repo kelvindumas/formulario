@@ -32,11 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
         alert('Eircode is invalid.');
         valid = false;
       }
-  
-      // If all validations pass, submit the form
-      if (valid) {
-        form.submit();
-      }
     });
   });
   

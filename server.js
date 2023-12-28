@@ -49,7 +49,7 @@ app.post('/submit', function(req, res){
                 console.error("Error inserting data:", err);
                 return res.status(500).send("Error: Could not insert data into the database");
             }
-            res.redirect("/form.html");
+            res.send("Form submitted successfully!");
         });
     }else{
 
